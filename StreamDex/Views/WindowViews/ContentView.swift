@@ -17,6 +17,7 @@ struct WebView: NSViewRepresentable {
     
     func makeNSView(context: Context) -> WKWebView {
         let webView = WKWebView()
+        // TODO: set user agent string in app settings
         webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15"
         return webView
     }

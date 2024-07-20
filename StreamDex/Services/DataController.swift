@@ -25,9 +25,9 @@ class DataController {
         do {
             try modelContainer.mainContext.delete(model: Video.self)
             
-            TestData.Channels.forEach {
-                modelContainer.mainContext.insert($0)
-            }
+//            TestData.Channels.forEach {
+//                modelContainer.mainContext.insert($0)
+//            }
             
         } catch {
             print("Could not delete all videos")

@@ -11,7 +11,7 @@ import Combine
 import UserNotifications
 import SharedModule
 import SwiftData
-
+import TwitchPlugin
 
 enum StreamsLayout {
     case symmetricGrid
@@ -44,6 +44,9 @@ class AppState: ObservableObject {
     @Published private(set) var showChat: Bool = true
     
     @Published private(set) var streamsPlaying: [Video] = []
+    
+    // TODO: temporary workaround
+    @PluginStorage<TwitchPlugin>("apiKey") var twitchAPIKey
     
     // When new streams comes on
     var autoPlayMode: AutoPlayMode = .enabled(autoFocus: .enabled)
@@ -249,9 +252,11 @@ extension AppState {
         guard !streamPlayers.contains(where: { $0.stream.url == stream.url }) else {
             return
         }
-        Task.detached {
+        Task.detached { [weak self] in
+            guard let self else { return }
             do {
-                let streamURL = try await self.streamlinkService.url(for: stream, quality: quality)
+                // TODO: streamlink plugin args can be defined by plugin modules
+                let streamURL = try await streamlinkService.url(for: stream, quality: .worst, args: ["--twitch-low-latency", "--twitch-disable-ads", "--twitch-api-header=Authorization=OAuth \(twitchAPIKey)"])
                 let streamPlayer = StreamPlayer(stream: stream, streamURL: streamURL)
                 await MainActor.run {
                     switch self.autoFocusMode {

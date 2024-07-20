@@ -4,4 +4,13 @@
    <FileRef
       location = "group:StreamDex.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SharedModule">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/YouTubePlugin">
+   </FileRef>
+   <FileRef
+      location = "group:Plugins/TwitchPlugin">
+   </FileRef>
 </Workspace>

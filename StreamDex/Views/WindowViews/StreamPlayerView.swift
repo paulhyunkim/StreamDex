@@ -111,7 +111,8 @@ struct StreamPlayerView: View {
             .overlay(alignment: .topLeading) {
                 VStack(alignment: .leading, spacing: 5) {
                     Spacer()
-                    Text(streamPlayer.stream.displayName)
+                    // TODO: - update
+                    Text("streamPlayer.stream.displayName")
                         .font(.headline)
                 }
                 .frame(maxWidth: 100)
