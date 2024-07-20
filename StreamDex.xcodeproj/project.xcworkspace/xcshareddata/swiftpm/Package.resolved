@@ -1,0 +1,69 @@
+{
+  "originHash" : "50defe8c3578560948e06f7e528ffe6de77774d081fbd4983342b8a2806d4e22",
+  "pins" : [
+    {
+      "identity" : "chronometer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Chronometer.git",
+      "state" : {
+        "revision" : "b4808d59a175b1f764cc3d7e2e927e5476b10427",
+        "version" : "0.1.11"
+      }
+    },
+    {
+      "identity" : "hitch",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Hitch.git",
+      "state" : {
+        "revision" : "328211598c24f356fccbcb5451cc48e21071a963",
+        "version" : "0.4.139"
+      }
+    },
+    {
+      "identity" : "sextant",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Sextant.git",
+      "state" : {
+        "revision" : "52a77d0bce0210cf9557faef7fd0adb9a6da02fb",
+        "version" : "0.4.31"
+      }
+    },
+    {
+      "identity" : "spanker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Spanker.git",
+      "state" : {
+        "revision" : "96e58f68274a2e6f370fff153ceb5674a06936c4",
+        "version" : "0.2.47"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup",
+      "state" : {
+        "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
+        "version" : "2.7.2"
+      }
+    },
+    {
+      "identity" : "url-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dmytro-anokhin/url-image",
+      "state" : {
+        "revision" : "4042f955f1fdff00ced85545e1eecdbf969b5cd0",
+        "version" : "3.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
